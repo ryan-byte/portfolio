@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+  }
+  
+  .slides img {
+    width: 100%;
+  }
+  .slides img:hover{
+    cursor: pointer;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.438);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+
+  .imageInsideModal{
+    display: block; /* This is important */
+    margin: 0 auto; /* Center horizontally */
+    width: 95%;
+    height: 95%;
+  }

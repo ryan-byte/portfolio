@@ -3226,7 +3226,6 @@ input, select, textarea {
 		-ms-transition: opacity 0.5s ease;
 		transition: opacity 0.5s ease;
 		position: relative;
-		z-index: 1;
 		overflow: hidden;
 	}
 

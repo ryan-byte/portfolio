@@ -7,11 +7,13 @@
 <html>
 	<head>
 		<title>Portfolio</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 		<link rel="stylesheet" href="assets/css/solid.min.css">
+		<link rel="stylesheet" href="assets/css/slider.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -32,7 +34,7 @@
 						<ul class="icons" style="margin: auto;">
 							<li><a href="https://www.linkedin.com/in/rayen-jellali-9a55451a4/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/ryan-byte" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href= "assets/pdf/Resume_Rayen_Jellali.pdf" download><i class="fa-solid fa-download"></i>resume</a></li>
+							<li><a href= "assets/pdf/resume.pdf" download><i class="fa-solid fa-download"></i>resume</a></li>
 						</ul>
 					</nav>
 
@@ -53,10 +55,48 @@
 									<header>
 										<h2> <a href="https://game-shop.onrender.com/">Ecommerce Game Shop</a></h2>
 									</header>
-									<a href="https://game-shop.onrender.com/" class="image fit image-filter"><img src="images/ecommerceSiteScreenShot.png" alt="" /></a>
-									<p>An ecommerce site for games created with Html/Css/Js in the frontend, 
+									
+									<!-- Ecommerce Game Shop images -->
+									<div class="slider">
+										<div class="slides">
+											<img src="images/gamesShop/homepage.png" alt="Home page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/userLogin.png" alt="User Login page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/userSignup.png" alt="User Signup page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/cart.png" alt="Cart" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/DeliveryInfo.png" alt="Delivery Info page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/confirmDelivery.png" alt="Confirm Delivery page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/trackOrders.png" alt="Track Order page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/adminLogin.png" alt="Admin Login page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/adminVerifyOrder.png" alt="Admin Verify Order page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/adminManageGames.png" alt="Manage Games page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/adminAddGame.png" alt="Add Game page" 
+												data-toggle="modal" data-target="#imageModal">
+											<img src="images/gamesShop/logs.png" alt="Logs page" 
+												data-toggle="modal" data-target="#imageModal">
+										</div>
+										<button class="prev-btn">
+											<i class="fa-solid fa-arrow-left"></i>
+										</button>
+										<button class="next-btn">
+											<i class="fa-solid fa-arrow-right"></i>
+										</button>
+									</div>
+
+									<!-- details -->
+									<p class="mt-3 mb-3">An ecommerce site for games created with Html/Css/Js in the frontend, 
 										Nodejs/Express in the backend with mongodb as a database, firebase storage as a cloud storage,
-										google openID connect for additionnal signup method.
+										google openID connect for additionnal signup method. <br />
+										User password is hashed before storing it in the database.
 									</p>
 									<ul class="actions special">
 										<li><a href="https://game-shop.onrender.com/" class="button"><i class="fa-solid fa-eye"></i> Demo</a>
@@ -75,8 +115,40 @@
 									<header>
 										<h2>Social Media App</h2>
 									</header>
-									<a class="image fit"><img src="images/inDevelopment.jpg" alt="" /></a>
-									<p>A social media app created with reactJs in the frontend, Nodejs/Express in the backend with mongodb as a database.</p>
+									<!-- social media app images -->
+									<div class="slider">
+										<div class="slides">
+											<img src="images/socialMediaApp/homepage.png" alt="Home page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/profile.png" alt="Profile page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/invitation.png" alt="Invitations page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/chat.png" alt="Chat page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/friends.png" alt="Friends page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/search.png" alt="Search page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/signin.png" alt="Signin page" 
+													data-toggle="modal" data-target="#imageModal">
+											<img src="images/socialMediaApp/signup.png" alt="Signup page" 
+													data-toggle="modal" data-target="#imageModal">
+										</div>
+										<button class="prev-btn">
+											<i class="fa-solid fa-arrow-left"></i>
+										</button>
+										<button class="next-btn">
+											<i class="fa-solid fa-arrow-right"></i>
+										</button>
+									</div>
+									<!-- details -->
+									<p class="mt-3 mb-3"> 
+										<b>(In development)</b> A social media app created with 
+										reactJs in the frontend, Nodejs/Express in the backend with 
+										mongodb as a database, socketio for the users chat.<br />
+										User password is hashed before storing it in the database.
+									</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/ryan-byte/node-social-media-app" class="button icon brands fa-github">Github code</a></li>
 									</ul>
@@ -87,6 +159,22 @@
 							<footer></footer>
 
 					</div>
+
+				<!-- Image Viewer Modal -->
+					<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="imageModalLabel"></h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<img src="" class="modal-img imageInsideModal" alt="">
+							</div>
+						</div>
+						</div>
+					</div>
+				  
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -109,6 +197,9 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="imageViewer.js"></script>
+			<script src="imageSlider.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
