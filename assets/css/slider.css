@@ -5,6 +5,7 @@
   }
   
   .slides {
+    transition: transform 0.5s ease;
     display: flex;
     width: 100%;
   }
@@ -41,11 +42,10 @@
   }
 
   .imageCaption{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
   }

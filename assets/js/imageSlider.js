@@ -71,12 +71,17 @@ function addImageSliderEventsToModal(modalImageSlider,currentSlideIndex,imageTit
   //setup current image label
   imageCaption.innerText = imageTitles[slideIndex];
 
+
+  
+  
   function goToSlide(n) {
     slides.style.transform = `translateX(-${n * 100}%)`;
     slideIndex = n;
     modalImageSlider.dataset.slideIndex = n;
     //change the modal title
     imageCaption.innerText = imageTitles[slideIndex];
+    //css animation
+    slides.style.transition = "all 0.5s ease-in-out";
   }
   
   function prevSlide() {
